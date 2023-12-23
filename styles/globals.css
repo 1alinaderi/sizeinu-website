@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #050506;
+}
+
+.btn_btn {
+  border-color: rgba(255, 255, 255, 0.06);
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: rgba(255, 255, 255, 0.06) 0px 0px 10px 0px inset;
+  background-color: linear-gradient(
+    rgba(255, 255, 255, 0.02) 0%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
+  border-radius: 14px;
+  padding: 20px 8px;
+}
+
+.btn_btn span {
+  border-color: rgba(255, 255, 255, 0.06);
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: rgba(255, 255, 255, 0.10) 0px 0px 10px 0px inset,
+    rgba(255, 255, 255, 0.06) 0px 0px 8px 0px;
+  padding: 16px;
+  border-radius: 8px;
+  width: 140px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: linear-gradient(
+    rgba(255, 255, 255, 0.02) 0%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
+}
